@@ -1,5 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -21,7 +22,6 @@ public class HomeWork_1 {
         wd.findElement(By.className("container"));
         wd.findElement(By.className("navbar-component_nav__1X_4m"));
         wd.findElement(By.className("login_login__3EHKB"));
-
 
         wd.findElement(By.id("root"));
 

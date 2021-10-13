@@ -28,6 +28,18 @@ public class StartSelenium {
         List<WebElement> elements = wd.findElements(By.tagName("a"));
         System.out.println(elements.size());
 
+        wd.findElement(By.cssSelector("a"));
+        wd.findElement(By.cssSelector(".container"));//поиск по class name
+        wd.findElement(By.cssSelector("#root"));// поиск по id
+        wd.findElement(By.cssSelector("[href='/login']"));//поиск элемента с атрибутом href имеющего значение '/login'
+
+        wd.findElement(By.cssSelector("[href]"));//по атрибуту
+        wd.findElement(By.cssSelector("[href^='/lo']"));// начинается с /lo
+        wd.findElement(By.cssSelector("[href $='in']"));//заканчивается на in
+        wd.findElement(By.cssSelector("[href *='ogi']"));//содержит ogi
+
+
+
 
 
         //click login button
