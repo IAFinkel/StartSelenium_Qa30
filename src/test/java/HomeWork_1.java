@@ -21,6 +21,7 @@ public class HomeWork_1 {
     public void Test_1(){
         wd.findElement(By.className("container"));
         wd.findElement(By.cssSelector(".container"));
+        wd.findElement(By.xpath("//*[@class='container']"));
 
         wd.findElement(By.className("navbar-component_nav__1X_4m"));
         wd.findElement(By.cssSelector(".navbar-component_nav__1X_4m"));
@@ -30,6 +31,7 @@ public class HomeWork_1 {
         wd.findElement(By.cssSelector("[class$=_4m]"));
         wd.findElement(By.cssSelector("div.navbar-component_nav__1X_4m"));
         wd.findElement(By.cssSelector("div.navbar-component_nav__1X_4m[class$=_4m]"));
+        wd.findElement(By.xpath("//*[@class='navbar-component_nav__1X_4m']"));
 
         wd.findElement(By.className("login_login__3EHKB"));
         wd.findElement(By.cssSelector(".login_login__3EHKB"));
@@ -44,6 +46,7 @@ public class HomeWork_1 {
         wd.findElement(By.cssSelector("#root.container"));
         wd.findElement(By.cssSelector("div#root.container"));
         wd.findElement(By.cssSelector("div#root[class=container]"));
+        wd.findElement(By.xpath("//*[@id='root']"));
 
         wd.findElement(By.tagName("body"));
         wd.findElement(By.cssSelector("body"));
@@ -51,6 +54,7 @@ public class HomeWork_1 {
         wd.findElement(By.tagName("div"));
         wd.findElement(By.cssSelector("div"));
         wd.findElement(By.cssSelector("div#root"));
+        wd.findElement(By.xpath("//div"));
 
         wd.findElement(By.tagName("h1"));
         wd.findElement(By.cssSelector("h1"));
@@ -59,6 +63,7 @@ public class HomeWork_1 {
         wd.findElement(By.tagName("a"));
         wd.findElement(By.cssSelector("a"));
         wd.findElement(By.cssSelector("a[href]"));
+        wd.findElement(By.xpath("//a"));
 
 
         wd.findElement(By.tagName("input"));
@@ -75,6 +80,7 @@ public class HomeWork_1 {
 
         wd.findElement(By.linkText("HOME"));
         wd.findElement(By.cssSelector("[href='/home']"));
+        wd.findElement(By.xpath("//*[href='/home']"));
 
         wd.findElement(By.linkText("ABOUT"));
         wd.findElement(By.cssSelector("a[href='/about']"));
@@ -90,6 +96,11 @@ public class HomeWork_1 {
         wd.findElement(By.cssSelector("a[href$='bout']"));
         wd.findElement(By.partialLinkText("IN"));
         wd.findElement(By.cssSelector("a[href$='in']"));
+
+        wd.findElement(By.xpath("//*[starts-with(@href,'/lo')]"));
+        wd.findElement(By.xpath("//*[contains(@href,'/lo')]"));
+
+
 
     }
 

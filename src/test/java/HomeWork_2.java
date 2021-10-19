@@ -21,13 +21,16 @@ public class HomeWork_2 {
 
     @Test
     public void tableHW1(){
-        List<WebElement> elements = wd.findElements(By.cssSelector("tr:nth-child(4)"));
+     // List<WebElement> elements = wd.findElements(By.cssSelector("tr:nth-child(4)"));
+        List<WebElement> elements = wd.findElements(By.xpath("//tr[4]"));
         for (WebElement e: elements){
             System.out.println(e.getText());
         }
         System.out.println("---------------------------------------------");
 
-        WebElement element1 = wd.findElement(By.cssSelector("tr:nth-child(4) td:nth-child(2"));
+     // WebElement element1 = wd.findElement(By.cssSelector("tr:nth-child(4) td:nth-child(2)"));
+        WebElement element1 = wd.findElement(By.xpath("//tr[4]/td[2]"));
+
         System.out.println(element1.getText());
         System.out.println("---------------------------------------------");
 
@@ -37,27 +40,36 @@ public class HomeWork_2 {
 
     @Test
     public void tableHW2(){
-        List<WebElement> elements = wd.findElements(By.cssSelector("tr"));
+      //List<WebElement> elements = wd.findElements(By.cssSelector("tr"));
+        List<WebElement> elements = wd.findElements(By.xpath("//tr"));
+
         System.out.println(elements.size());
         System.out.println("---------------------------------------------");
 
-        List<WebElement> elements1 = wd.findElements(By.cssSelector("th"));
+      //List<WebElement> elements1 = wd.findElements(By.cssSelector("th"));
+        List<WebElement> elements1 = wd.findElements(By.xpath("//th"));
+
         System.out.println(elements1.size());
         System.out.println("---------------------------------------------");
 
-        List<WebElement> elements2 = wd.findElements(By.cssSelector("tr:nth-child(3)"));
+      //List<WebElement> elements2 = wd.findElements(By.cssSelector("tr:nth-child(3)"));
+        List<WebElement> elements2 = wd.findElements(By.xpath("//tr[3]"));
+
         for (WebElement e: elements2){
             System.out.println(e.getText());
         }
         System.out.println("---------------------------------------------");
 
-        List<WebElement> elements3 = wd.findElements(By.cssSelector("tr td:last-child"));
+      //List<WebElement> elements3 = wd.findElements(By.cssSelector("tr td:last-child"));
+        List<WebElement> elements3 = wd.findElements(By.xpath("//tr/td[last()]"));
+
         for (WebElement e: elements3){
             System.out.println(e.getText());
         }
         System.out.println("---------------------------------------------");
 
-        WebElement element4 = wd.findElement(By.cssSelector("tr:nth-child(2) td:nth-child(2)"));
+      //WebElement element4 = wd.findElement(By.cssSelector("tr:nth-child(2) td:nth-child(2)"));
+        WebElement element4 = wd.findElement(By.xpath("//tr[2]/td[2]"));
         System.out.println(element4.getText());
 
 
